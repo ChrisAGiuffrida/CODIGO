@@ -1,0 +1,131 @@
+/* Sintaxis de CSS | Selector puede ser una etiqueta de HTML
+propiedad es un atributo que le vamos a dar a las etiquetas -> 
+
+selector {
+    propiedas: valor;
+}
+
+
+*/
+
+/* El reseteo | Se utilizza el selector universal * | le saco el margen
+y el relleno con dos propiedades que se llaman margin y padding
+nos da la posibilidad de decidir nosotros mismos los espacios
+entre los elementos */
+*{
+   margin: 0;  /*margen*/
+   padding: 0; /*relleno*/
+}
+ /* Defino la uniodad de media gral pata todo el proyecto*/
+ html{
+    font-size: 20px;
+ }
+
+ h1{
+    color:rgb(0, 255, 64);
+}
+
+p{
+
+    color: violet;
+}
+
+/* para indivilizuar las elementos de HTML en css puedo utilizar las clases
+siempre una clase lleva el punto adelante*/
+
+
+
+/* ID | # delaante del nombre del ID*/
+
+#servicios {
+    /*color del fondo*/
+ background-color: khaki;
+
+}
+
+/* La diferencia entre class y ID es que class se puede reutilizar, pero ID no
+Caso de la vida: id es como tu dni, class es como
+un atributo tuyo
+
+ID= lo vamos a usar para vincular enlace, para identificar una seccion completa o 
+javascript u otros lenguajes
+
+CLASS= lo vamos a usar todo el tiempo
+
+*/
+
+/* propiedades */
+.paragraph{
+    /* Color del texto*/
+    color:rgb(25, 0, 255);
+    text-align: left;
+    text-decoration: overline;
+    font-size: 10px;
+}
+
+/* a{ 
+    text-decoration: none;
+    cursor: pointer;
+} */
+
+
+/* Unidades de medida */
+
+/* Unidades absolutas | en desarrollo web decimos que son absolutas porque no
+cambian su tamaño en distintas pantallas 
+   cm - pt - mt- px 
+*/
+
+/* Unidades relativas | en desarrollo web son las que se adaptan al tipo
+de pantalla
+
+px - % - em - rem - vh- vw
+*/
+
+.pararaph-dos{
+    font-size: 38px;
+}
+
+#pie-de-pagina {
+    background-color: blue;
+    /* width => El ancho va a ser el 50% de cualquier pantalla, siempre ocupa la mitad
+    del espacio*/
+    width: 50%;
+}
+
+/* rem | relativa al elemento root | root es la medida general que nos
+da el navegador | 16px */
+
+/*a {
+    font-size: 4rem; 
+}*/
+
+img {
+    height: 20rem;
+}
+
+/* em | directament proporcional elemento html o : root que son definidos por nosotros mismo*/
+
+a{
+    font-size: 4em;
+}
+
+/* Cual unidad utilizamos entonces? */
+
+/*pueden usar la que quieran y donde quieran
+
+parrafos, titulos, enlaces suelen tener pixceles en el font size
+las imagenes y videos o multimedia suele utilizar % vh y vw
+las propiedades de la caja, margin y padding pueden usar rem o em
+
+*/
+
+body{
+    /* url() -> Funcion preguntarme, donde esta la imagen*/
+    background-image: url('ases.jpg'); /* trae a la imagen*/
+    background-size: cover;
+    /*background-position: center;*/
+    /* Parallax*/
+    background-attachment: fixed;
+
+}
